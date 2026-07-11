@@ -4,9 +4,9 @@ from uuid import uuid4
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.app.database import Base, SessionLocal, engine
-from backend.app.models import ActionItem, Meeting, Summary, TranscriptLine
-from backend.app.routes import meetings
+from .database import Base, SessionLocal, engine
+from .models import ActionItem, Meeting, Summary, TranscriptLine
+from .routes import meetings
 
 app = FastAPI(title='Fireflies Backend', version='1.0.0')
 

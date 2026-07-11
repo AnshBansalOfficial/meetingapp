@@ -6,8 +6,8 @@ from pydantic import BaseModel
 from datetime import datetime
 from sqlalchemy.orm import Session
 
-from backend.app.database import get_db
-from backend.app.models import ActionItem, Meeting, Summary, TranscriptLine
+from ..database import get_db
+from ..models import ActionItem, Meeting, Summary, TranscriptLine
 
 router = APIRouter(tags=['meetings'])
 
